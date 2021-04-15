@@ -1,0 +1,136 @@
+* {
+    color: rgb(70, 70, 70);
+    font-family: Helvetica;
+    border: 1px solid;
+}
+
+header#bg{
+    background-color: rgb(185, 185, 185);
+}
+header#center{
+    margin: 0 auto 0;
+    width:700px;
+    display: flex;
+    flex-direction: column;
+
+}
+#head_top {
+    padding-top: 20px;
+    display: flex;
+    align-items: baseline;
+}
+#logo{
+    font-size: x-large;
+}
+header nav {
+    margin-left: auto;
+}
+ol {
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+
+}
+li{
+    list-style-type: none;
+    padding: 15px 5px;
+    font-size: small;
+}
+#head_main{
+    display: flex;
+    padding: 20px 0;
+}
+div#caption {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    padding-right: 3px;
+}
+#intro{
+    font-size: xx-large;
+    font-weight: bold;
+}
+#sub{
+}
+#slide {
+    flex: 6;
+    background-color: rgb(145, 145, 145);
+    height: 200px;
+}
+#slide_txt{
+    margin: 80px 0 0 80px;
+}
+
+
+
+
+section {
+    background-color: white;
+    margin: 0 auto;
+    width:700;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+#switcher {
+    padding: 8px;
+    margin: 0 150px 0 auto;
+}
+
+#switcher input{
+    padding: 10px;
+}
+
+#cont_servs{
+    flex: 45%;
+    display: flex;
+}
+#cont_servs div, #cont_works div{
+background-color: rgb(185, 185, 185);
+margin: 10px ;
+padding: 80px 0 0 50px;
+}
+#servs1{
+    flex: 1;
+}
+#servs2{
+    flex: 1;
+}
+#servs3{
+    flex: 1;
+}
+#cont_works{
+    display: flex;
+    flex: 45%;
+}
+#work1{
+    flex: 1;
+}
+#work2{
+    flex: 1;
+}
+#work3{
+    flex: 1;
+}
+#twitter {
+    background-color: rgb(185, 185, 185);
+    padding: 15px 0 15px 25px;
+}
+
+footer{
+    background-color: rgb(185, 185, 185);
+    display: flex;
+    width: 750px;
+}
+footer span{
+    margin-left: auto;
+}
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
+
