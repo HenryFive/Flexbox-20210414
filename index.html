@@ -5,10 +5,10 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-<header id="bg">
-    <header id="center">
-        <div id="head_top">
-            <div id="logo">Logo</div>
+<header id="flex-header">
+    <div id="flex-header__container">
+        <div id="flex-header__container-top">
+            <div id="flex-header__logo">Logo</div>
             <nav>
                 <ol>
                     <li>Link1</li>
@@ -19,47 +19,49 @@
                 </ol>
             </nav>
         </div>
-        <div id="head_main">
-            <div id="caption">
-                <span id="intro">Intro</span>
-                <span id="sub">Some introduction lines about the website or company</span>
+        <div id="flex-header__main-container">
+            <div id="flex-header__caption">
+                <span id="flex-header__caption-intro">Intro</span>
+                <span>Some introduction lines about the website or company</span>
             </div>
-            <div id="slide"><div id="slide_txt">Featured Project<br> Slider</div></div>
+            <div id="flex-header__slide-container"><div id="flex-header--slide-txt">Featured Project<br> Slider</div></div>
         </div>
-    </header>
+    </div>
 </header>
 
 <section>
-    <div id="switcher">
-        <input type="radio" name="btn_slider" value=1 class="btn_radio">
-        <input type="radio" name="btn_slider" value=2 class="btn_radio">
-        <input type="radio" name="btn_slider" value=3 class="btn_radio">
-        <input type="radio" name="btn_slider" value=4 class="btn_radio">
-        <input type="radio" name="btn_slider" value=5 class="btn_radio">
+    <div id="flex-section__swithcer-container">
+        <input type="radio" name="btn_slider" value=1>
+        <input type="radio" name="btn_slider" value=2>
+        <input type="radio" name="btn_slider" value=3>
+        <input type="radio" name="btn_slider" value=4>
+        <input type="radio" name="btn_slider" value=5>
     </div>
-    <div id="cont_servs">
-        <div id="servs1">Services</div>
-        <div id="servs2">Services</div>
-        <div id="servs3">Services</div>
+    <div id="flex-section__services-container">
+        <div id="flex-section--service-1">Services</div>
+        <div id="flex-section--service-2">Services</div>
+        <div id="flex-section--service-3">Services</div>
     </div>
-    <div id="cont_works">
-        <div id="work1">Recent Work</div>
-        <div id="work2">Recent Work</div>
-        <div id="work3">Recent Work</div>
+    <div id="flex-section__works-container">
+        <div id="flex-section--work-1">Recent Work</div>
+        <div id="flex-section--work-3">Recent Work</div>
+        <div id="flex-section--work-3">Recent Work</div>
     </div>
-    <div id="Twitter">Twitter Feed</div>
+    <div id="flex-section--twitter">Twitter Feed</div>
 </section>
 <footer>
-    <nav>
-        <ol>
-            <li>Link1</li>
-            <li>Link2</li>
-            <li>Link3</li>
-            <li>Link4</li>
-            <li>Link5</li>
-        </ol>
-    </nav>
-    <span>Copyright info</span>
+    <div id="flex-footer__container">
+        <nav>
+            <ol>
+                <li>Link1</li>
+                <li>Link2</li>
+                <li>Link3</li>
+                <li>Link4</li>
+                <li>Link5</li>
+            </ol>
+        </nav>
+        <span>copyright info</span>
+    </div>
 </footer>
 </body>
 </html>
