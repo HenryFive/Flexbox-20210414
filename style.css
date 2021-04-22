@@ -20,6 +20,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -68,6 +70,8 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 20px 0;
 }
 
@@ -82,7 +86,7 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-right: 3px;
+  padding: 0 15px 15px 0;
 }
 
 #flex-header__caption-intro {
@@ -96,17 +100,20 @@ li {
           flex: 6;
   background-color: #969696;
   height: 20vh;
+  min-width: 300px;
 }
 
 #flex-header--slide-txt {
-  margin: 80px 0 0 80px;
+  margin: 50px 0 0 80px;
 }
 
-section {
+#flex__section {
   background-color: white;
-  margin: 0 auto 20px auto;
-  width: 700px;
-  height: 500px;
+}
+
+#flex__section-container {
+  margin: 0 auto 20px;
+  width: 70vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -120,18 +127,21 @@ section {
 
 #flex-section__swithcer-container {
   padding: 8px;
-  margin: 8px 150px 0 auto;
+  margin-left: auto;
+  margin-right: 180px;
+  -webkit-box-flex: 5%;
+      -ms-flex: 5%;
+          flex: 5%;
 }
 
 #switcher input {
   padding: 10px;
 }
 
-#flex-section__services-container {
-  margin: 0 -10px;
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
+#flex-section__services-container, #flex-section__works-container {
+  -webkit-box-flex: 40%;
+      -ms-flex: 40%;
+          flex: 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +152,7 @@ section {
 #flex-section__services-container div, #flex-section__works-container div {
   background-color: #b9b9b9;
   margin: 10px;
-  padding: 80px 0 0 50px;
+  padding: 50px 0 70px 40px;
 }
 
 #flex-section--service-1 {
@@ -161,18 +171,6 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-}
-
-#flex-section__works-container {
-  margin: 0 -10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: 45%;
-      -ms-flex: 45%;
-          flex: 45%;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 #flex-section--work-1 {
@@ -196,7 +194,10 @@ section {
 #flex-section--twitter {
   background-color: #b9b9b9;
   padding: 15px 0 15px 25px;
-  margin-top: 10px;
+  margin: 10px 10px 0;
+  -webkit-box-flex: 5%;
+      -ms-flex: 5%;
+          flex: 5%;
 }
 
 footer {
@@ -207,7 +208,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 75vw;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 70vw;
   margin: 0 auto;
 }
 
